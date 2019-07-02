@@ -1,0 +1,275 @@
+/*
+* Home
+*/
+
+.homeIntro {
+  align-items: start;
+  /*background: linear-gradient(135deg, #0f1626, #0f1626);*/
+  background: linear-gradient(135deg, #686767, #757575);
+  color: #f5f5f5;
+}
+
+.homeIntro h1 {
+  color: #01baef;
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+.homeIntro p {
+  margin: 0;
+}
+
+#homeIntroIcon {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.gray a {
+  color: #56c4c2;
+  text-decoration: none;
+}
+.gray a:hover {
+  text-decoration: underline;
+}
+
+.responsiveAlign {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightJustify {
+  align-self: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.arrowButton {
+  align-items: center;
+  border-radius: 2em;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0.5em 1em 0.5em 2em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.arrowIcon {
+  height: 24px;
+  margin-left: 0.5em;
+  width: 24px;
+}
+.arrowIcon.aqua {
+  fill: #56c4c2;
+}
+.arrowIcon.orange {
+  fill: #ef5b0c;
+}
+
+section.elix {
+  background: #1f2a2c;
+  border-top: 2px solid #56c4c2;
+  color: white;
+}
+
+section.elix #elixLogo {
+  margin-right: 2em;
+}
+
+section.elix .arrowButton {
+  color: white;
+  background: none;
+  border: 2px solid #56c4c2;
+}
+
+.blockWithArrow {
+  display: flex;
+  position: relative;
+}
+
+.halfBlock {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  padding: 38px;
+  position: relative;
+  z-index: 2;
+}
+
+.protrudingArrow:not(.right) {
+  left: 43px;
+}
+.protrudingArrow.right {
+  right: 43px;
+}
+
+.protrudingArrow.aqua {
+  background: #4dbab9;
+}
+
+.protrudingArrow.orange {
+  background: #e47900;
+}
+
+.protrudingArrow.purple {
+  background: #545f93;
+}
+.protrudingArrow.purple.right {
+  background: #434f8e;
+}
+
+.protrudingArrow.leather {
+  background: #ab987a;
+}
+.protrudingArrow.coral {
+  background: #ff533d;
+}
+.protrudingArrow.softblue {
+  background: #78a1bb;
+}
+
+.protrudingArrow {
+  bottom: -10px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.moduleContainer {
+  padding: 10px;
+}
+
+.module {
+  background: white;
+  color: #20292c;
+  margin: 10px;
+  padding: 20px;
+}
+
+.module h2 {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.module p {
+  line-height: 1.4em;
+}
+
+.module .arrowButton {
+  background: #20292c;
+  color: white;
+}
+
+#moduleElixLogo {
+  margin-bottom: 20px;
+}
+
+
+/*
+ * Desktop
+ */
+@media (min-width: 800px) {
+
+  .responsiveAlign {
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  section.homeIntro {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 17px;
+    padding: 70px 80px;
+  }
+  
+  .homeIntro h1 {
+    font-size: 2.4em;
+    font-weight: 500;
+  }
+  
+  #homeIntroIcon {
+    width: 431px;
+    height: 259px;
+    float: right;
+    margin-bottom: initial;
+    margin-left: 1em;
+  }
+  
+  section.elix {
+    align-items: center;
+    flex-direction: row;
+    padding: 12px 70px;
+  }
+  
+  section.elix .arrowButton {
+    margin-left: 2em;
+  }
+  
+  .block.grayOnDesktop {
+    /*background: #20292c;*/
+    background: #0f1626;
+    color: #f5f5f5;
+  }
+  
+  .moduleContainer {
+    padding: 26px;
+  }
+  
+  .module {
+    margin: 26px;
+    padding: 42px;
+  }
+  
+  #moduleElixLogo {
+    margin-bottom: inherit;
+  }
+  
+  .illustrationContainer {
+    min-height: 300px;
+  }
+  
+  .rightJustify {
+    align-self: center;
+  }
+  
+  .protrudingArrow {
+    bottom: -20px;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .protrudingArrow:not(.right) {
+    left: 70px;
+  }
+  .protrudingArrow.right {
+    right: 70px;
+  }
+  
+  .protrudingArrow.purple {
+    background: #535e93;
+  }
+  .protrudingArrow.purple.right {
+    background: #475390;
+  }
+
+  .protrudingArrow.green {
+    background: #20bf55;
+  }
+
+  .protrudingArrow.ltblue {
+    background: #01baef;
+  }
+
+  .protrudingArrow.ltblue.right {
+    background: #01baef;
+  }
+}
