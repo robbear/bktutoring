@@ -24,6 +24,11 @@
   width: 100%;
 }
 
+.contactus {
+  margin: auto;
+  width: 60%;
+}
+
 .gray a {
   color: #56c4c2;
   text-decoration: none;
@@ -173,6 +178,15 @@ section.elix .arrowButton {
   margin-bottom: 20px;
 }
 
+.contactform textarea {
+  resize: none;
+  min-height: 130px;
+  width: 100%;
+}
+
+.contactform input {
+  width: 100%;
+}
 
 /*
  * Desktop
