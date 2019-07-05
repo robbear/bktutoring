@@ -150,9 +150,31 @@
       <div class="contactus">
         <h1>Contact us</h1>
         <p>
-          <div>info@bearmankorthtutoring.com</div>
+          <div>Our email: info@bearmankorthtutoring.com</div>
         </p>
 
+        <form class="contactform" name="contact" method="POST" data-netlify="true">
+          <p>
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" placeholder="Your name...">
+          </p>
+
+          <p>
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" placeholder="Your email...">
+          </p>
+
+          <p>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Your message..."></textarea>
+          </p>
+
+          <p>
+          <input type="submit" value="Send">
+          </p>
+        </form>
+
+        <!--
         <form class="contactform" name="contact" method="POST" data-netlify="true">
           <p>
             <input type="text" name="name" placeholder="Name" /></label>   
@@ -167,6 +189,7 @@
             <button type="submit">Send</button>
           </p>    
         </form>
+      -->
       </div>
     </section>
 
