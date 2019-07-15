@@ -4,8 +4,8 @@
 
 .homeIntro {
   display: grid;
-  background: linear-gradient(135deg, #686767, #757575);
-  color: #f5f5f5;
+  background: linear-gradient(135deg, #666666, #757575);
+  color: #ffffff;
   grid-row-gap: 20px;
 }
 
@@ -180,7 +180,7 @@ section.elix .arrowButton {
   margin: auto;
   width: 80%;
   border-radius: 5px;
-  background-color: #757575;
+  background: linear-gradient(135deg, #666666, #757575);
   padding: 20px;
 }
 
@@ -203,7 +203,7 @@ section.elix .arrowButton {
 
 /* Style the submit button with a specific background color etc */
 .contactform input[type=submit] {
-  background-color: #0b4f6c;
+  background-color: #28404e;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -213,7 +213,7 @@ section.elix .arrowButton {
 
 /* When moving the mouse over the submit button, add a lighter color */
 .contactform input[type=submit]:hover {
-  background-color: #01baef;
+  background-color: #014a73;
 }
 
 /*

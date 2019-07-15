@@ -36,6 +36,19 @@ body {
   min-height: 100%;
 }
 
+/**
+ * Colors
+
+#014a73 (primary dark blue)
+#66a1c3 (primary light blue)
+#ffffff (white)
+#001d2e (very dark)
+#28404e (very dark blue)
+#666666 (grey)
+#014a73 (medium dark blue)
+#80a5b9 (light "dark" blue)
+#b3d0e1 (light "light" blue)
+ */
 /*
 green: #20bf55
 blue: #0b4f6c
@@ -61,10 +74,10 @@ h2.green {
   border-bottom: 1px solid #20bf55;
 }
 h2.blue {
-  border-bottom: 1px solid #0b4f6c;
+  border-bottom: 1px solid #014a73;
 }
 h2.ltblue {
-  border-bottom: 1px solid #01baef;
+  border-bottom: 1px solid #66a1c3;
 }
 h2.white {
   border-bottom: 1px solid #fbfbff;
@@ -440,17 +453,17 @@ section {
 }
 
 .block.ltblue {
-  background: linear-gradient(45deg, #01baef, #01baef);
+  background: linear-gradient(45deg, #66a1c3, #b3d0e1);
   color: white;
 }
 
 .block.blue {
-  background: linear-gradient(45deg, #0b4f6c, #0b4f6c);
+  background: linear-gradient(45deg, #014a73, #80a5b9);
   color: white;
 }
 
 .block.grey {
-  background: linear-gradient(45deg, #757575, #757575);
+  background: linear-gradient(45deg, #666666, #757575);
   color: white;
 }
 
