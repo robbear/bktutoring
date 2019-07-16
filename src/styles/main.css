@@ -271,3 +271,85 @@ section > :last-child,
     padding: 45px 72px;
   }
 }
+
+/*
+*
+* About stuff
+*
+*/
+.person {
+  margin: 2em 0;
+}
+
+.photoContainer {
+  align-self: flex-start;
+  float: left;
+  height: 25%;
+  margin: 0 1em 1em 0;
+  width: 25%;
+}
+
+.photo {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.social {
+  margin-top: 6px;
+}
+.social a {
+  display: inline-block; /* Stupid Edge/IE */
+  text-decoration: none;
+}
+.social a + a {
+  margin-left: 6px;
+}
+
+.social svg {
+  height: 15px;
+}
+
+.bio {
+  clear: left;
+  margin-top: 1em;
+}
+
+/* Desktop */
+@media screen and (min-width: 800px) {
+  .person {
+    display: flex;
+    flex-direction: row;
+    margin: 4em 0;
+  }
+
+  .photoContainer {
+    float: none;
+    height: 100%;
+    margin-right: 2em;
+  }
+
+  .detailsAndBio {
+    flex: 1;
+  }
+
+  .details {
+    display: flex;
+  }
+
+  .nameAndTitle {
+    flex: 1;
+  }
+
+  .social {
+    margin-top: 0;
+  }
+  .social svg {
+    height: 19px;
+  }
+}
+
