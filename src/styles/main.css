@@ -37,24 +37,17 @@ body {
 }
 
 /**
- * Colors
+ * Colors for reference
 
-#014a73 (primary dark blue)
-#66a1c3 (primary light blue)
-#ffffff (white)
-#001d2e (very dark)
-#28404e (very dark blue)
-#666666 (grey)
-#014a73 (medium dark blue)
-#80a5b9 (light "dark" blue)
-#b3d0e1 (light "light" blue)
- */
-/*
-green: #20bf55
-blue: #0b4f6c
-ltblue: #01baef
-white: #fbfbff
-grey: #757575
+  #014a73 (primary dark blue)
+  #66a1c3 (primary light blue)
+  #ffffff (white)
+  #001d2e (very dark)
+  #28404e (very dark blue)
+  #666666 (grey)
+  #014a73 (medium dark blue)
+  #80a5b9 (light "dark" blue)
+  #b3d0e1 (light "light" blue)
 */
 
 h1 {
@@ -70,9 +63,6 @@ h2 {
   padding-bottom: 8px;
 }
 
-h2.green {
-  border-bottom: 1px solid #20bf55;
-}
 h2.blue {
   border-bottom: 1px solid #014a73;
 }
@@ -80,10 +70,10 @@ h2.ltblue {
   border-bottom: 1px solid #66a1c3;
 }
 h2.white {
-  border-bottom: 1px solid #fbfbff;
+  border-bottom: 1px solid #ffffff;
 }
 h2.grey {
-  border-bottom: 1px solid #757575;
+  border-bottom: 1px solid #666666;
 }
 
 h3 {
@@ -115,227 +105,9 @@ li a {
   border-bottom: 1px solid currentColor;
 }
 
-pre {
-  border-left: 10px solid #50abac;
-  max-width: 700px;
-  overflow: auto;
-  padding: 1em 0 1em 20px;
-  white-space: pre-wrap;
-  width: auto;
-}
-
-code {
-  display: inline;
-  font-family: "Consolas", "Menlo", "Courier New", "Courier", monospace;
-  overflow: visible;
-  word-wrap: normal;
-}
-
-figure {
-  margin: 2em 0;
-  text-align: center;
-}
-figure a {
-  border: none;
-}
-figure img {
-  max-width: 100%;
-}
-figure figcaption {
-  font-style: italic;
-}
-
 img.block {
   display: block;
 }
-
-.pullQuote {
-  border-bottom: 1px solid #a7a7a7;
-  border-top: 1px solid #a7a7a7;
-  font-size: 19px;
-  font-style: italic;
-  font-weight: normal;
-  line-height: 1.5;
-  margin: 1.5em 0;
-  padding: 1.25em;
-  text-align: center;
-}
-
-.testimonial {
-  border-bottom: 1px solid #a7a7a7;
-  font-style: italic;
-  font-weight: normal;
-  line-height: 1.5;
-  margin: 1.5em 0;
-  padding: 1.25em;
-}
-
-.desktopOnly {
-  display: none !important;
-}
-
-:not(:defined):not(.showWhenUndefined) {
-  display: none;
-}
-
-
-/*
- * Top navigation
- */
-
-#header {
-  background: white;
-  border-bottom: 1px solid rgba(112, 112, 112, 0.3);
-  align-items: center;
-  display: flex;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 19px 14px;
-  position: -webkit-sticky;
-  position: sticky;
-  text-transform: uppercase;
-  top: 0;
-  z-index: 3;
-}
-
-/* BUG: Safari ignores this block for some reason */
-#linkHome {
-  color: inherit;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-#headerLogo {
-  display: block;
-  flex: 1;
-  margin-bottom: -7px;
-  width: 50%;
-  height: 35px;
-}
-
-#headerSpace {
-  flex: 1;
-}
-
-#headerLinks {
-  align-items: center;
-  display: flex;
-}
-
-#headerLinks .areaLink {
-  color: #0f1626;
-  display: inline-flex;
-  letter-spacing: 1px;
-  padding: 3px 0;
-  margin-left: 2em;
-  text-decoration: none;
-}
-
-#headerLinks .areaLink.current {
-  border-bottom: 1px solid #ff533d;
-  border-top: 1px solid transparent; /* For vertical alignment */
-}
-
-#headerLinks #elixButton {
-  align-items: center;
-  background: #50abac;
-  border-radius: 2em;
-  color: white;
-  display: flex;
-  letter-spacing: 1px;
-  margin-left: 2em;
-  padding: 0.9em 1.7em;
-  white-space: nowrap;
-}
-
-#navigationMenuButton {
-  fill: #4a5557;
-  height: 2em;
-  width: 2em;
-}
-
-
-/*
- * Footer
- */
-#footerNavigation {
-  display: flex;
-  flex-direction: column;
-}
-
-#footerNavigation > :last-child {
-  border-top: 2px solid #ff533d;
-  margin-top: 2em;
-  padding-top: 2em;
-}
-
-#footerLogo {
-  height: 35px;
-}
-
-.footerColumn {
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-}
-
-.footerColumn:not(:last-child) {
-  margin-right: 70px;
-}
-
-.footerColumn > :not(:last-child) {
-  margin-bottom: 1.5em;
-}
-
-.footerTweet {
-  flex: 1;
-}
-
-#footerLinks {
-  display: flex;
-}
-
-#footerLinks .areaLink {
-  color: inherit;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-#footerContact {
-  align-items: flex-end;
-}
-
-#socialIcons a {
-  text-decoration: none;
-}
-
-#socialIcons > *:not(:last-child) {
-  margin-right: 0.7em;
-}
-
-#footerLinks svg {
-  height: 24px;
-  width: 24px;
-}
-
-#footerMailLink {
-  color: white;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-
-#copyright {
-  color: #707070;
-  flex: 1;
-  font-size: 13px;
-  padding: 2em 0;
-  text-align: center;
-  white-space: nowrap;
-}
-
 
 /*
  * Page header
